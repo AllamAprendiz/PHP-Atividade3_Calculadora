@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 Calculadora</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <!-- INPUT DOS NUMEROS -->
+        <label for="LabelNumero1_for">NUMERO 1</label>
+        <input type="text" name="Numero1_name" id="Numero1_id">
+        <br>
+        <label for="LabelNumero1_for">NUMERO 2</label>
+        <input type="text" name="Numero2_name" id="Numero2_id">
+        <!-- FIM DOS INPUT DE NUMERO -->
+        <br>
+        <!-- CRIA O BOTÃO QUE ESCOLHE O OPERADOR ARITMÉTRICO -->
+        <select name="EscolherOperador_name" id="EscolherOperador_id">
+            <option value="+">ADIÇÃO</option>
+            <option value="-">SUBTRAÇÃO</option>
+            <option value="x">MULTIPLICAÇÃO</option>
+            <option value="/">DIVISAO</option>
+        </select>
+        <!-- FIM DO BOTÃO QUE ESCOLHE OS OPERADORES ARTIMETICOS -->
+        <br>
+        <!-- CRIA O BOTÃO QUE CALCULA OS INPUTS COM PHP -->
+        <input type="submit" name="Calcular_name" id="Calcular_id" value="CALCULAR">
+    </form>
+</body>
+</html>
